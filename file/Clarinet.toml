@@ -1,25 +1,13 @@
 [project]
 name = "staking-contract"
 authors = ["Hammed Yakub <hamsohood@gmail.com>"]
-description = "A Clarity smart contract for staking tokens, earning rewards, and applying penalties for early withdrawals."
-license = "MIT"
-telemetry = false
+description = "Staking contract with SIP-010 fungible token integration"
+telemetry = true
+requirements = []
 
 [contracts.staking]
 path = "contracts/staking.clar"
-depends_on = []
+depends_on = ["ft-trait"]
 
-[repl]
-costs_version = 1
-
-[[accounts]]
-name = "deployer"
-balance = 100000000000
-
-[[accounts]]
-name = "wallet_1"
-balance = 50000000000
-
-[[accounts]]
-name = "wallet_2"
-balance = 50000000000
+[contracts.ft-trait]
+path = "contracts/ft-trait.clar"
