@@ -1,7 +1,7 @@
 [project]
 name = "staking-contract"
 authors = ["Hammed Yakub <hamsohood@gmail.com>"]
-description = "A Clarity smart contract for staking tokens and earning rewards."
+description = "A Clarity smart contract for staking tokens, earning rewards, and applying penalties for early withdrawals."
 license = "MIT"
 telemetry = false
 
@@ -10,7 +10,6 @@ path = "contracts/staking.clar"
 depends_on = []
 
 [repl]
-# Pre-defined accounts for testing
 costs_version = 1
 
 [[accounts]]
