@@ -1,0 +1,26 @@
+[project]
+name = "staking-contract"
+authors = ["Hammed Yakub <hamsohood@gmail.com>"]
+description = "A Clarity smart contract for staking tokens and earning rewards."
+license = "MIT"
+telemetry = false
+
+[contracts.staking]
+path = "contracts/staking.clar"
+depends_on = []
+
+[repl]
+# Pre-defined accounts for testing
+costs_version = 1
+
+[[accounts]]
+name = "deployer"
+balance = 100000000000
+
+[[accounts]]
+name = "wallet_1"
+balance = 50000000000
+
+[[accounts]]
+name = "wallet_2"
+balance = 50000000000
